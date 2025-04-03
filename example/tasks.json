@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build CUDA Program",
+        "type": "shell",
+        "command": "/usr/bin/nvcc",
+        "args": [
+          "-o", "main", "main.cu"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "CUDA Build Task"
+      }
+    ]
+  }
+  
