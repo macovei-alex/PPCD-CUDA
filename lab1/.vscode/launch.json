@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "CUDA Debugging",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/main",  // Path to the compiled program
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/cuda-gdb",  // Path to CUDA GDB debugger
+        "miDebuggerArgs": "",
+        "preLaunchTask": "Build CUDA Program",  // Ensure this task is defined in tasks.json
+        "logging": {
+          "moduleLoad": false,
+          "trace": false,
+          "engineLogging": false
+        },
+        "debugServerPath": "",
+        "debugServerArgs": "",
+        "serverLaunchTimeout": 10000
+      }
+    ]
+  }
+  
